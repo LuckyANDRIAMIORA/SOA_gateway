@@ -1,0 +1,48 @@
+http:
+  port: 8081
+admin:
+  port: 9876
+  host: localhost
+apiEndpoints:
+  salary:
+    host: localhost
+    paths: '/salary'
+  salaries:
+    host: localhost
+    paths: '/salary/all'
+serviceEndpoints:
+  salary:
+    url: 'http://localhost:3003'
+  salaries:
+    url: 'http://localhost:3003'
+policies:
+  - basic-auth
+  - cors
+  - expression
+  - key-auth
+  - log
+  - oauth2
+  - proxy
+  - rate-limit
+pipelines:
+  salary:
+    apiEndpoints:
+      - salary
+    policies:
+    # Uncomment `key-auth:` when instructed to in the Getting Started guide.
+    # - key-auth:
+      - proxy:
+          - action:
+              serviceEndpoint: salary 
+              changeOrigin: true
+
+  salaries:
+    apiEndpoints:
+      - salaries
+    policies:
+    # Uncomment `key-auth:` when instructed to in the Getting Started guide.
+    # - key-auth:
+      - proxy:
+          - action:
+              serviceEndpoint: salaries 
+              changeOrigin: true
