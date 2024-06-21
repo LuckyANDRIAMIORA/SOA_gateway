@@ -35,18 +35,7 @@ Pour installer et configurer le projet sur votre machine locale, suivez les éta
     npm install
     ```
 
-4. Modifiez le fichier `config.js` pour ajouter les liens des différents services :
-
-    ```javascript
-    // Exemple de modification du fichier config.js
-    module.exports = {
-      services: {
-        service1: 'http://localhost:3001',
-        service2: 'http://localhost:3002',
-        // Ajoutez d'autres services selon vos besoins
-      }
-    };
-    ```
+4. Modifiez le fichier `gateway.config.yml` pour ajouter les liens vers les différents services.
 
 ## Usage 🚀
 
