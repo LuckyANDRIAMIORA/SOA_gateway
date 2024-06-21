@@ -1,6 +1,4 @@
-Bien sûr ! Voici la version du README avec des emojis pour ajouter une touche de fun et de clarté :
 
----
 
 # SOA_gateway 🚀
 
