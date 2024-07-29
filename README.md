@@ -2,7 +2,7 @@
 
 # SOA_gateway 🚀
 
-SOA_gateway est une API Gateway créée avec Express-Gateway. Cette application permet de gérer les requêtes vers différents services dans une architecture orientée services (SOA).
+SOA_gateway est une API Gateway créée avec Express-Gateway. Il permet de gérer les requêtes vers différents services dans une architecture orientée services (SOA).
 
 ## Table des matières 📚
 
