@@ -72,4 +72,3 @@ Pour plus d'informations sur Express-Gateway, veuillez consulter la [documentati
 
 ---
 
-N'hésite pas à modifier ce README en fonction des besoins spécifiques de ton projet. Si tu as besoin de plus de détails ou d'ajustements, fais-le moi savoir !
